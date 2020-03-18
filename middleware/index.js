@@ -1,0 +1,20 @@
+module.exports = {
+  adminForbidden: require('./adminForbidden'),
+  studentForbidden: require('./studentForbidden'),
+  teacherForbidden: require('./teacherForbidden'),
+  auth: require('./auth'),
+  createToken: require('./createToken'),
+  createUser: require('./createUser'),
+  editUser: require('./editUser'),
+  getUser: require('./getUser'),
+  getUsers: require('./getUsers'),
+  deleteUser: require('./deleteUser'),
+  getCourse: require('./getCourse'),
+  getCourses: require('./getCourses'),
+  createCourse: require('./createCourse'),
+  editCourse: require('./editCourse'),
+  createCourseRecord: require('./createCourseRecord'),
+  editCourseRecord: require('./editCourseRecord'),
+  getCourseRecordsByStudent: require('./getCourseRecordsByStudent'),
+  login: require('./login')
+}
