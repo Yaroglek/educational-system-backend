@@ -20,6 +20,8 @@ module.exports = app => {
   router.get('/users',
     middleware.auth,
     middleware.createToken,
+    middleware.studentForbidden,
+    middleware.teacherForbidden,
     middleware.getUsers,
     (req, res, next) => {
       res.send({

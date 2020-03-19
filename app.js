@@ -71,6 +71,8 @@ init();
 mongodb(app);
 routes(app);
 
+app.use('/', express.static(path.join(__dirname, 'public')));
+
 const server = app.listen(3001, () => {
   console.log(server.address());
 });
